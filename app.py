@@ -380,7 +380,7 @@ def build_sidebar(df: pd.DataFrame) -> dict:
         f"""
         <div style="text-align:center; padding: 6px 0 16px 0;">
             <div style="font-size:34px;">🎧</div>
-            <div style="color:white; font-weight:800; font-size:16px;">ATLANTIC RECORDING</div>
+            <div style="color:grey; font-weight:800; font-size:16px;">ATLANTIC RECORDING</div>
             <div style="color:{BRAND_SECONDARY}; font-size:11.5px; font-weight:700; letter-spacing:1px;">
                 UK MARKET INTELLIGENCE
             </div>
