@@ -33,7 +33,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-DATA_PATH = "C:/Users/DELL/Downloads/Atlantic_United_Kingdom.csv"
+DATA_PATH = "C:/Users/DELL/Desktop/UK_Top_Music_Project/Atlantic_United_Kingdom.csv"
 
 BRAND_PRIMARY = "#6C5CE7"
 BRAND_SECONDARY = "#00D2A0"
