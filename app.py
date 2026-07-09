@@ -104,9 +104,6 @@ def inject_css() -> None:
             [data-baseweb="menu"] li {{
                 color: #eef0fa !important;
             }}
-            [data-baseweb="tag"] {{
-                background-color: {BRAND_ACCENT} !important;
-            }}
 
             /* ---------- Hero header ---------- */
             .hero-header {{
