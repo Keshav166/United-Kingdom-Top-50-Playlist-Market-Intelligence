@@ -77,6 +77,37 @@ def inject_css() -> None:
                 color: #eef0fa !important;
             }}
 
+            /* ---------- Top header/toolbar strip ---------- */
+            [data-testid="stHeader"] {{
+                background: #0d0e15 !important;
+            }}
+            [data-testid="stToolbar"],
+            [data-testid="stDecoration"],
+            [data-testid="stStatusWidget"] {{
+                background: transparent !important;
+            }}
+            [data-testid="stHeader"] * {{
+                color: #eef0fa !important;
+            }}
+
+            /* ---------- Multiselect / select widgets (Album Type, etc.) ---------- */
+            [data-testid="stMultiSelect"] [data-baseweb="select"] > div,
+            [data-testid="stSelectbox"] [data-baseweb="select"] > div {{
+                background-color: #1b1e2b !important;
+                border-color: rgba(255,255,255,0.12) !important;
+            }}
+            [data-baseweb="popover"] ul,
+            [data-baseweb="menu"] {{
+                background-color: #1b1e2b !important;
+            }}
+            [data-baseweb="popover"] li,
+            [data-baseweb="menu"] li {{
+                color: #eef0fa !important;
+            }}
+            [data-baseweb="tag"] {{
+                background-color: {BRAND_ACCENT} !important;
+            }}
+
             /* ---------- Hero header ---------- */
             .hero-header {{
                 background: linear-gradient(120deg, {BRAND_PRIMARY} 0%, #4834d4 45%, {BRAND_SECONDARY} 100%);
