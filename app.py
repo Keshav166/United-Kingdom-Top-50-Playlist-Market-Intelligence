@@ -76,6 +76,14 @@ def inject_css() -> None:
                 background-color: #1b1e2b !important;
                 color: #eef0fa !important;
             }}
+            /* The multiselect/selectbox has a hidden inline search input that sits
+               among the tags — it must stay transparent or it visually covers them. */
+            [data-testid="stMultiSelect"] input,
+            [data-testid="stSelectbox"] input {{
+                background-color: transparent !important;
+                width: auto !important;
+                min-width: 2px !important;
+            }}
 
             /* ---------- Top header/toolbar strip ---------- */
             [data-testid="stHeader"] {{
