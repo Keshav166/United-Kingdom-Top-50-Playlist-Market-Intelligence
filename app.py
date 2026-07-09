@@ -33,7 +33,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-DATA_PATH = "Atlantic_United_Kingdom.csv"
+DATA_PATH = "C:/Users/DELL/Desktop/UK_Top_Music_Project/Atlantic_United_Kingdom.csv"
 
 BRAND_PRIMARY = "#6C5CE7"
 BRAND_SECONDARY = "#00D2A0"
@@ -56,8 +56,25 @@ def inject_css() -> None:
                 font-family: 'Inter', sans-serif;
             }}
 
-            .main {{
-                background: radial-gradient(circle at top left, #161824 0%, #0d0e15 100%);
+            .main,
+            .stApp,
+            [data-testid="stAppViewContainer"],
+            [data-testid="stMain"] {{
+                background: radial-gradient(circle at top left, #161824 0%, #0d0e15 100%) !important;
+                color: #eef0fa !important;
+            }}
+
+            [data-testid="stSidebar"] {{
+                background: linear-gradient(180deg, #14151f 0%, #0d0e15 100%) !important;
+                border-right: 1px solid rgba(255,255,255,0.06);
+            }}
+            [data-testid="stSidebar"] * {{
+                color: #eef0fa;
+            }}
+            [data-testid="stSidebar"] input,
+            [data-testid="stSidebar"] textarea {{
+                background-color: #1b1e2b !important;
+                color: #eef0fa !important;
             }}
 
             /* ---------- Hero header ---------- */
@@ -380,7 +397,7 @@ def build_sidebar(df: pd.DataFrame) -> dict:
         f"""
         <div style="text-align:center; padding: 6px 0 16px 0;">
             <div style="font-size:34px;">🎧</div>
-            <div style="color:grey; font-weight:800; font-size:16px;">ATLANTIC RECORDING</div>
+            <div style="color:white; font-weight:800; font-size:16px;">ATLANTIC RECORDING</div>
             <div style="color:{BRAND_SECONDARY}; font-size:11.5px; font-weight:700; letter-spacing:1px;">
                 UK MARKET INTELLIGENCE
             </div>
